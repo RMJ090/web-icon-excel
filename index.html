@@ -9,7 +9,7 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f8f8ff;
+      background: linear-gradient(135deg, #e0f7fa, #f8f9ff);
       margin: 0;
       padding: 20px;
     }
@@ -17,6 +17,8 @@
       text-align: center;
       margin-bottom: 25px;
       font-size: 35px;
+      color: #1a237e;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
     }
     .container {
       display: flex;
@@ -27,35 +29,43 @@
     .column {
       flex: 1 1 300px;
       max-width: 500px;
-      background: #fff;
-      border-radius: 12px;
-      padding: 18px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .column:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
     .column h3 {
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 15px;
-      color: #333;
+      color: #0d47a1;
+      border-bottom: 2px solid #bbdefb;
+      padding-bottom: 5px;
     }
     .link-box {
       display: flex;
       align-items: center;
-      background-color: #eef;
-      border-radius: 8px;
-      padding: 10px;
-      margin-bottom: 10px;
+      background: linear-gradient(90deg, #e3f2fd, #fce4ec);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 12px;
       text-decoration: none;
-      color: #007bff;
+      color: #0d47a1;
       font-weight: bold;
-      transition: background 0.3s;
+      transition: all 0.3s ease;
     }
     .link-box:hover {
-      background-color: #dde;
+      background: linear-gradient(90deg, #bbdefb, #f8bbd0);
+      transform: translateX(5px);
     }
     .link-box img {
-      width: 24px;
-      height: 24px;
-      margin-right: 10px;
+      width: 28px;
+      height: 28px;
+      margin-right: 12px;
     }
     @media (max-width: 600px) {
       .container {
@@ -70,13 +80,13 @@
 </head>
 <body>
 
-  <h1>Daftar File Excel & Google Sheets</h1>
+  <h1>📊 Daftar File Excel & Google Sheets</h1>
 
   <div class="container">
 
     <!-- Kolom Excel -->
     <div class="column">
-      <h3>File Excel (Download & Update)</h3>
+      <h3>📂 File Excel (Download & Update)</h3>
       <a href="files/POWDER COATING PROCESS MONITORING.xlsx" download class="link-box">
         <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel">
         Laporan Mingguan Powder Coating
@@ -89,44 +99,34 @@
 
     <!-- Kolom Google Sheets -->
     <div class="column">
-      <h3>File Google Sheets (Online)</h3>
+      <h3>🌐 File Google Sheets (Online)</h3>
       <a href="https://docs.google.com/spreadsheets/d/1VixML066NuTsBK4dXfRTpld4cogJ0Smj3K6vU6o5Cl8/edit?usp=sharing" target="_blank" class="link-box">
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968557.png" alt="Google Sheets">
         Database Monitoring Progress Powder Coating
       </a>
       <a href="https://docs.google.com/spreadsheets/d/1Y_lY5SLELckmy7dUPERw8uh_K7RoBCXsn6X9PeCEGME/edit?usp=sharing" target="_blank" class="link-box">
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968557.png" alt="Google Sheets">
-        Laporan Harian Insiden dan Permasalahan Kerja
+        Laporan Harian Insiden & Permasalahan Kerja
       </a>
       <a href="https://docs.google.com/spreadsheets/d/1bsn4DF7Meh0h6cdD4jSnkKwwrYFKkgrtOq-hcgBLoTk/edit?usp=sharing" target="_blank" class="link-box">
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968557.png" alt="Google Sheets">
         Laporan Keuangan Bulan Agustus
       </a>
-      
       <a href="https://docs.google.com/spreadsheets/d/1UHOJ-PKocSdphkY3kdVeBEZzYbO_SR7s8Th703SJ45Q/edit?usp=sharing" target="_blank" class="link-box">
         <img src="https://cdn-icons-png.flaticon.com/512/5968/5968557.png" alt="Google Sheets">
-        Laporan Total Pemakaiian Gas Elpiji
+        Laporan Total Pemakaian Gas Elpiji
       </a>
       <a href="https://forms.gle/6NETSTFPdGQA6gUk9" target="_blank" class="link-box">
         <img src="https://cdn-icons-png.flaticon.com/512/2991/2991110.png" alt="Google Forms">
         Data Entry Monitoring Progress Powder Coating
       </a>
-      
-     <a href="https://forms.gle/569QvpLXcN2Pv2fXA" target="_blank" class="link-box">
+      <a href="https://forms.gle/569QvpLXcN2Pv2fXA" target="_blank" class="link-box">
         <img src="https://cdn-icons-png.flaticon.com/512/2991/2991110.png" alt="Google Forms">
         Data Entry Permasalahan Kerja
       </a> 
-      
     </div>
 
   </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
